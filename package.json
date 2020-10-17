@@ -1,8 +1,12 @@
 {
-  "name": "zapateria-zitelli",
+  "name": "zapateria-tablero",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "Tablero creado para la materia Base de datos aplicada 1 de la carrera ISI UAI",
+  "keywords": [
+    "nodejs",
+    "postgresql",
+    "reactjs"
+  ],
   "main": "src/index.js",
   "dependencies": {
     "react": "16.13.1",
@@ -19,5 +23,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
