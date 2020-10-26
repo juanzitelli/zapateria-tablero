@@ -7,9 +7,9 @@ export const getBestSalespeople = salespeople => ({
 });
 
 export const startGetBestSalespeople = () => dispatch => {
-  // const prodURL = `https://zapateria-zitelli-api.herokuapp.com/vendedores/best-salespeople/`
-  const devURL = `http://localhost:4000/vendedores/best-salespeople`;
-  Axios.get(devURL)
+  const prodURL = `https://zapateria-zitelli-api.herokuapp.com/vendedores/best-salespeople/`
+  // const devURL = `http://localhost:4000/vendedores/best-salespeople`;
+  Axios.get(prodURL)
     .then(response => {
       if (response.data.error) {
         return Swal.fire("Error", response.data.error, "error");
@@ -27,9 +27,9 @@ export const getVentas = ventas => ({
 })
 
 export const startGetSales = () => dispatch => {
-  // const prodURL = `https://zapateria-zitelli-api.herokuapp.com/vendedores/sales/`
-  const devURL = `http://localhost:4000/vendedores/sales`;
-  Axios.get(devURL)
+  const prodURL = `https://zapateria-zitelli-api.herokuapp.com/vendedores/sales/`
+  // const devURL = `http://localhost:4000/vendedores/sales`;
+  Axios.get(prodURL)
     .then(response => {
       if (response.data.error) {
         return Swal.fire("Error", response.data.error, "error");

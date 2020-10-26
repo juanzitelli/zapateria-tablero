@@ -7,7 +7,7 @@ export const getAllProducts = products => ({
 });
 
 export const startGetAllProducts = () => dispatch => {
-  const prodURL = `https://zapateria-zitelli-api.herokuapp.com/productos/`;
+  const prodURL = `https://zapateria-zitelli-api.herokuapp.com/productos`;
   // const devURL = `http://localhost:4000/productos/`;
   Axios.get(prodURL)
     .then(response => {
@@ -27,7 +27,7 @@ export const getMostSoldProducts = products => ({
 });
 
 export const startGetMostSoldProducts = () => dispatch => {
-  const prodURL = `https://zapateria-zitelli-api.herokuapp.com/most-sold-products`;
+  const prodURL = `https://zapateria-zitelli-api.herokuapp.com/productos/most-sold-products`;
   // const devURL = `http://localhost:4000/productos/most-sold-products`;
   Axios.get(prodURL)
     .then(response => {
