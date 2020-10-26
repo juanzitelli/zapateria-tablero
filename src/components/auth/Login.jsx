@@ -13,7 +13,7 @@ export const Login = ({ history }) => {
   });
 
   useEffect(() => {
-    if(localStorage.getItem('usuario') !== ""){
+    if(localStorage.getItem('usuario') != ""){
       dispatch(loginAction(localStorage.getItem('usuario')))
     }
   }, [dispatch])
