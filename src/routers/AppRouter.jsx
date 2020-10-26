@@ -1,28 +1,30 @@
-import React, { useContext } from "react";
+import React from "react";
+import { useSelector } from "react-redux";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
+import { Login } from "./../components/auth/Login";
+import { DashboardRoutes } from "./DashboardRouter";
 import { PrivateRoute } from "./routes/PrivateRoute";
 import { PublicRoute } from "./routes/PublicRoute";
-import { Home } from "./../components/Home";
-import { Login } from "./../components/Login";
-import { AppContext } from "../contexts/AppContext";
 export const AppRouter = () => {
-  const {
-    auth: [user]
-  } = useContext(AppContext);
+
+  const { logged } = useSelector(state => state.auth)
+
+  
   return (
+
     <Router>
-      <div>
+      <div className="main-container">
         <Switch>
           <PublicRoute
             exact
             path="/login"
             component={Login}
-            isAuthenticated={user.logged}
+            isAuthenticated={logged}
           />
           <PrivateRoute
             path="/"
-            component={Home}
-            isAuthenticated={user.logged}
+            component={DashboardRoutes}
+            isAuthenticated={logged}
           />
         </Switch>
       </div>

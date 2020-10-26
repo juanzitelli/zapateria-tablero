@@ -1,26 +1,13 @@
-import React, { useReducer, useEffect } from "react";
-import { AppContext } from "./contexts/AppContext";
+import React from "react";
 import { AppRouter } from "./routers/AppRouter";
-import { authenticationReducer } from "./reducers/authenticationReducer";
-import "./styles.css";
-
-const init = () => {
-  return {
-    username: "",
-    logged: false
-  };
-};
+import { Provider } from "react-redux";
+import { store } from "./store/store";
 
 export const App = () => {
-  const auth = useReducer(authenticationReducer, { logged: false }, init);
-  console.log(auth);
+  
   return (
-    <AppContext.Provider
-      value={{
-        auth
-      }}
-    >
+    <Provider store={store}>
       <AppRouter />
-    </AppContext.Provider>
+    </Provider>
   );
 };
