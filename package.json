@@ -9,7 +9,7 @@
     "reactjs"
   ],
   "main": "src/index.js",
-  "homepage": "https://juanzitelli.github.io/zapateria-tablero",
+  "homepage": "https://juanzitelli.github.io/",
   "dependencies": {
     "axios": "^0.20.0",
     "prop-types": "^15.7.2",
