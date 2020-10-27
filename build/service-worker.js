@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/zapateria-tablero/precache-manifest.6c5291c128b4670f0af3915933c245c5.js"
+  "/zapateria-tablero/precache-manifest.0a29cefc5424946752ffe24e8ccafdef.js"
 );
 
 self.addEventListener('message', (event) => {

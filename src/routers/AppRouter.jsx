@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { BrowserRouter as Router, Switch } from "react-router-dom";
+import { HashRouter as Router, Switch } from "react-router-dom";
 import { Login } from "./../components/auth/Login";
 import { DashboardRoutes } from "./DashboardRouter";
 import { PrivateRoute } from "./routes/PrivateRoute";
@@ -12,7 +12,7 @@ export const AppRouter = () => {
 
   return (
 
-    <Router>
+    <Router basename="">
       <div className="main-container">
         <Switch>
           <PublicRoute

@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2598f94466cbcfa38ba68acda9db9ca8",
+    "revision": "63eeda74a263b9c6f541866ffbc419ca",
     "url": "/zapateria-tablero/index.html"
   },
   {
-    "revision": "5b50b066c86712eea82b",
+    "revision": "1599bbde52f7ac298072",
     "url": "/zapateria-tablero/static/css/main.58a19899.chunk.css"
   },
   {
-    "revision": "769aa695884ed6a9b415",
-    "url": "/zapateria-tablero/static/js/2.730ccaa9.chunk.js"
+    "revision": "526141fef1395f91c21f",
+    "url": "/zapateria-tablero/static/js/2.f5358dd5.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/zapateria-tablero/static/js/2.730ccaa9.chunk.js.LICENSE.txt"
+    "url": "/zapateria-tablero/static/js/2.f5358dd5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5b50b066c86712eea82b",
-    "url": "/zapateria-tablero/static/js/main.1992ce3f.chunk.js"
+    "revision": "1599bbde52f7ac298072",
+    "url": "/zapateria-tablero/static/js/main.b077c81b.chunk.js"
   },
   {
     "revision": "a47d15a7653d0803be19",
