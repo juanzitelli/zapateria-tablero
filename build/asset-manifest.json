@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/zapateria-tablero/static/css/main.58a19899.chunk.css",
+    "main.js": "/zapateria-tablero/static/js/main.1992ce3f.chunk.js",
+    "main.js.map": "/zapateria-tablero/static/js/main.1992ce3f.chunk.js.map",
+    "runtime-main.js": "/zapateria-tablero/static/js/runtime-main.e2098ab3.js",
+    "runtime-main.js.map": "/zapateria-tablero/static/js/runtime-main.e2098ab3.js.map",
+    "static/js/2.730ccaa9.chunk.js": "/zapateria-tablero/static/js/2.730ccaa9.chunk.js",
+    "static/js/2.730ccaa9.chunk.js.map": "/zapateria-tablero/static/js/2.730ccaa9.chunk.js.map",
+    "index.html": "/zapateria-tablero/index.html",
+    "precache-manifest.6c5291c128b4670f0af3915933c245c5.js": "/zapateria-tablero/precache-manifest.6c5291c128b4670f0af3915933c245c5.js",
+    "service-worker.js": "/zapateria-tablero/service-worker.js",
+    "static/css/main.58a19899.chunk.css.map": "/zapateria-tablero/static/css/main.58a19899.chunk.css.map",
+    "static/js/2.730ccaa9.chunk.js.LICENSE.txt": "/zapateria-tablero/static/js/2.730ccaa9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e2098ab3.js",
+    "static/js/2.730ccaa9.chunk.js",
+    "static/css/main.58a19899.chunk.css",
+    "static/js/main.1992ce3f.chunk.js"
+  ]
+}
