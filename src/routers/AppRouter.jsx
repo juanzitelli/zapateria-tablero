@@ -5,11 +5,11 @@ import { Login } from "./../components/auth/Login";
 import { DashboardRoutes } from "./DashboardRouter";
 import { PrivateRoute } from "./routes/PrivateRoute";
 import { PublicRoute } from "./routes/PublicRoute";
+
 export const AppRouter = () => {
 
   const { logged } = useSelector(state => state.auth)
 
-  
   return (
 
     <Router>

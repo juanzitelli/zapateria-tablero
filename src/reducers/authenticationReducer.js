@@ -1,6 +1,18 @@
+const getInitialState = () => {
+  if (localStorage.getItem("usuario")) {
+    return {
+      usuario: localStorage.getItem("usuario"),
+      logged: true,
+    };
+  }
+  else {
+    return {
+      logged: false,
+    }
+  }
+};
 
-
-export const authenticationReducer = (state ={}, action) => {
+export const authenticationReducer = (state = getInitialState(), action) => {
   switch (action.type) {
     case "login":
       return {

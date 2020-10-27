@@ -1,6 +1,7 @@
 {
   "name": "zapateria-tablero",
   "version": "1.0.0",
+  "author": "Juan Agustín Zitelli",
   "description": "Tablero creado para la materia Base de datos aplicada 1 de la carrera ISI UAI",
   "keywords": [
     "nodejs",
@@ -8,6 +9,7 @@
     "reactjs"
   ],
   "main": "src/index.js",
+  "homepage": "https://juanzitelli.github.io/zapateria-tablero",
   "dependencies": {
     "axios": "^0.20.0",
     "prop-types": "^15.7.2",

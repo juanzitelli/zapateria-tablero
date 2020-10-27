@@ -8,7 +8,7 @@ export const Navbar = () => {
   const history = useHistory();
   const handleLogout = () => {
     history.replace('/login');
-    localStorage.setItem("usuario", "")
+    localStorage.removeItem("usuario")
     dispatch(logoutAction())
   }
   return (

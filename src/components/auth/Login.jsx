@@ -1,41 +1,46 @@
-import React, { useEffect } from 'react';
-import { useForm } from "../../hooks/useForm";
-import { loginAction, startLoginAction } from '../../actions/auth'
+import React from 'react';
 import { useDispatch } from 'react-redux';
-import validator from 'validator'
-import Swal from 'sweetalert2'
-export const Login = ({ history }) => {
-  
+import { useHistory } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import validator from 'validator';
+import { startLoginAction } from '../../actions/auth';
+import { useForm } from "../../hooks/useForm";
+export const Login = () => {
+
   const dispatch = useDispatch();
+  const history = useHistory();
   const [formValues, handleInputChange, resetForm] = useForm({
     username: "",
     password: ""
   });
 
-  useEffect(() => {
-    if(localStorage.getItem('usuario') != ""){
-      dispatch(loginAction(localStorage.getItem('usuario')))
-    }
-  }, [dispatch])
-
   const { username, password } = formValues;
 
   const handleLogin = (event) => {
     event.preventDefault();
-    const lastPath = localStorage.getItem('lastPath') || '/home';
+    const lastPath = localStorage.getItem("lastPath")
     if (validator.isEmpty(username, { ignore_whitespace: false })) {
       return Swal.fire("Error", "El nombre de usuario es inválido", "error")
     }
     if (validator.isEmpty(password, { ignore_whitespace: false })) {
       return Swal.fire("Error", "La contraseña no puede estar vacía", "error");
     }
-    history.replace(lastPath);
-    dispatch(startLoginAction(username, password));
-    resetForm({ username: "", password: "" });
+
+    try {
+      dispatch(startLoginAction(username, password));
+    } catch (error) {
+      console.log(error)
+    }
+    finally {
+      resetForm({ username: "", password: "" });
+      history.replace(lastPath);
+    }
+
+
   };
 
 
-  
+
   return (
     <form className="form-login animate__animated animate__fadeIn" id="id-form-login" onSubmit={handleLogin}>
       <h1 className="h3 mb-3">Iniciá sesión</h1>
