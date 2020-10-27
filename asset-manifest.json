@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/zapateria-tablero/static/css/main.58a19899.chunk.css",
-    "main.js": "/zapateria-tablero/static/js/main.3f417ebe.chunk.js",
-    "main.js.map": "/zapateria-tablero/static/js/main.3f417ebe.chunk.js.map",
+    "main.js": "/zapateria-tablero/static/js/main.b077c81b.chunk.js",
+    "main.js.map": "/zapateria-tablero/static/js/main.b077c81b.chunk.js.map",
     "runtime-main.js": "/zapateria-tablero/static/js/runtime-main.e2098ab3.js",
     "runtime-main.js.map": "/zapateria-tablero/static/js/runtime-main.e2098ab3.js.map",
-    "static/js/2.15c31010.chunk.js": "/zapateria-tablero/static/js/2.15c31010.chunk.js",
-    "static/js/2.15c31010.chunk.js.map": "/zapateria-tablero/static/js/2.15c31010.chunk.js.map",
+    "static/js/2.f5358dd5.chunk.js": "/zapateria-tablero/static/js/2.f5358dd5.chunk.js",
+    "static/js/2.f5358dd5.chunk.js.map": "/zapateria-tablero/static/js/2.f5358dd5.chunk.js.map",
     "index.html": "/zapateria-tablero/index.html",
-    "precache-manifest.e0c97e8f53948a0f397f5eab63960ffa.js": "/zapateria-tablero/precache-manifest.e0c97e8f53948a0f397f5eab63960ffa.js",
+    "precache-manifest.0a29cefc5424946752ffe24e8ccafdef.js": "/zapateria-tablero/precache-manifest.0a29cefc5424946752ffe24e8ccafdef.js",
     "service-worker.js": "/zapateria-tablero/service-worker.js",
     "static/css/main.58a19899.chunk.css.map": "/zapateria-tablero/static/css/main.58a19899.chunk.css.map",
-    "static/js/2.15c31010.chunk.js.LICENSE.txt": "/zapateria-tablero/static/js/2.15c31010.chunk.js.LICENSE.txt"
+    "static/js/2.f5358dd5.chunk.js.LICENSE.txt": "/zapateria-tablero/static/js/2.f5358dd5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e2098ab3.js",
-    "static/js/2.15c31010.chunk.js",
+    "static/js/2.f5358dd5.chunk.js",
     "static/css/main.58a19899.chunk.css",
-    "static/js/main.3f417ebe.chunk.js"
+    "static/js/main.b077c81b.chunk.js"
   ]
 }
